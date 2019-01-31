@@ -5,7 +5,7 @@ module D_FF
   output reg q
 );
 
-  always @ (posedge r or negedge c)
+  always @ (posedge r or posedge c)
     begin
       if (r)
         q <= 1'b0;
