@@ -1,5 +1,5 @@
 #Compiling design modules
-vlog tb.v registerFile.v tb.v
+vlog tb.v registerFile.v 
 
 #no optimization
 vsim -novopt work.tb
