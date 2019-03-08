@@ -36,24 +36,24 @@ begin
   Reset <= 0; 
 end
 
-initial
-#5 RegWrite <= 1;
-
 always
 begin
+  #5 WriteData <= WriteData + 64'd1;
   #5 Clk <= ~Clk;
-  #5 RegWrite <= ~RegWrite;
 end
-
-always
-#55 Reset <= ~Reset;
 
 always
 begin
-  #100 Rs1 <= 5'd4;
-  #0 Rs1 <= 5'd5;
-  #0 Rd <= 5'd6;
+  #30 RegWrite <= ~RegWrite;
+  #30 Reset <= ~Reset;
+  #0 RegWrite <= ~RegWrite;
 end
 
+always
+begin
+  #120 Rs1 <= 5'd4;
+  #0 Rs2 <= 5'd5;
+  #0 Rd <= 5'd4;
+end
 
 endmodule
