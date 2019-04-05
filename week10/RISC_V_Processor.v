@@ -133,7 +133,6 @@ MUX m2
 );
 
 //ALU CONTROL
-wire [3:0]Funct;
 wire [3:0]Operation;
 
 ALU_Control alc
@@ -145,7 +144,6 @@ ALU_Control alc
 );
 
 //ALU
-wire carryin;
 wire [63:0]result;
 wire carryout;
 wire zero;
