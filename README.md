@@ -2,5 +2,5 @@
 
 Computer Architecture Lab Repository
 
-  Spring 2019
-  Habib University
+    Spring 2019
+    Habib University
